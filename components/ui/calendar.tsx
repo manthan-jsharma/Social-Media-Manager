@@ -59,7 +59,8 @@ function Calendar({
         day_hidden: "invisible",
         ...classNames,
       }}
-      // @ts-expect-error
+      // @ts-expect-error: 'IconLeft' is not a known property in 'CustomComponents' type,
+      // but it's a required property for the 'components' object in this context.
       components={{
         IconLeft: ({ className, ...props }) => (
           <ChevronLeft className={cn("size-4", className)} {...props} />

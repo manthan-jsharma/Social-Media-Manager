@@ -59,7 +59,7 @@ function Calendar({
         day_hidden: "invisible",
         ...classNames,
       }}
-      // @ts-ignore
+      // @ts-expect-error
       components={{
         IconLeft: ({ className, ...props }) => (
           <ChevronLeft className={cn("size-4", className)} {...props} />
